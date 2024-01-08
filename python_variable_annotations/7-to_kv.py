@@ -4,5 +4,6 @@ import typing
 
 
 def to_kv(k: str, v: typing.Union[int, float]) -> typing.Tuple[str, float]:
+    """function that return a tuple"""
     tupl = (k, v)
     return tupl
