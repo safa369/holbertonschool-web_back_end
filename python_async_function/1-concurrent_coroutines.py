@@ -8,7 +8,7 @@ async def wait_n(n: int, max_delay: int) -> "list[float]":
     x = int(await wait_random(n))
     for _ in range(x):
         lis = await wait_random(max_delay)
-        liss.append(lis)
+        liss.append(float(lis))
     for j in range(len(liss)):
         min_x = j
         for y in range(min_x + 1, len(liss)):
