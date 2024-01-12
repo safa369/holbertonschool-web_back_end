@@ -12,7 +12,7 @@ async def wait_n(n: int, max_delay: int) -> typing.List[float]:
         liss.append(float(lis))
     for j in range(x):
         min_x = j
-        for y in range(min_x + 1, len(liss)):
+        for y in range(min_x + 1, x):
             if liss[min_x] > liss[y]:
                 liss[min_x], liss[y] = liss[y], liss[min_x]
     return liss
