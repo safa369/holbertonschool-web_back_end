@@ -1,5 +1,5 @@
 // insert a document in a collection
-use $4
+use $2
 db.school([
     {name: "Holberton school}
 ])
