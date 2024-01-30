@@ -1,14 +1,8 @@
 #!/usr/bin/env python3
 """model of async comprehension"""
-import asyncio
-import random
-import typing
-
+from typing import List
 async_generator = __import__("0-async_generator").async_generator
 
 
-async def async_comprehension() -> typing.List[float]:
-    res = []
-    async for result in async_generator():
-        res.append(result)
-    print(res)
+async def async_comprehension() -> List[float]:
+    return [_ async for _ in async_generator()]
