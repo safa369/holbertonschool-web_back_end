@@ -10,4 +10,4 @@ async def measure_runtime() -> float:
     awaitable = [async_comprehension() for _ in range(4)]
     result = await asyncio.gather(*awaitable)
     t2 = time.time()
-    print(t2 - t1)
+    return(t2 - t1)
