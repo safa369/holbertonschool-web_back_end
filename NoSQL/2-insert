@@ -2,3 +2,4 @@
 db.school.insertOne([
     {name: "Holberton school"}
 ])
+WriteResult({ "nInserted" : 1 })
