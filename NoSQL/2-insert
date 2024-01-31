@@ -1,5 +1,2 @@
 // insert a document in a collection
-db.school.insertOne([
-    {name: "Holberton school"}
-])
-WriteResult({ "nInserted" : 1 })
+result = db.school.insert({name: "Holberton school"})
