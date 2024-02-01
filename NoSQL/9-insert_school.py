@@ -6,6 +6,7 @@ import pymongo
 
 
 def insert_school(mongo_collection, **kwargs):
+    """function return _id """
     new_colection = {}
     for key, value in kwargs.items():
         new_colection['key'] = 'value'
