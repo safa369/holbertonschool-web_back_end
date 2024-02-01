@@ -4,5 +4,5 @@
 
 def insert_school(mongo_collection, **kwargs):
     """function return _id """
-    new_col = mongo_collection.insert_one(kwargs)
+    new_col = mongo_collection.insert(kwargs)
     return new_col
