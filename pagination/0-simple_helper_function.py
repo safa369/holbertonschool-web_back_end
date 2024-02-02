@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""module rerturn a tuple"""
 
 
 def index_range(page, page_size):
