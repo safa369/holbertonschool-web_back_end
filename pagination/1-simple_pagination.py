@@ -31,8 +31,8 @@ class Server:
         return self.__dataset
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
-        if (not isinstance(page, int) or not isinstance(page_size, int) or
-            page <= 0 or page_size <= 0):
+        if(not isinstance(page, int) or not isinstance(page_size, int) or
+           page <= 0 or page_size <= 0):
             raise AssertionError
         with open(self.DATA_FILE, 'r') as f:
             reader = csv.reader(f)
