@@ -32,6 +32,7 @@ class Server:
         return self.__dataset
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
+        """function return the start and the end"""
         if(not isinstance(page, int) or not isinstance(page_size, int) or
            page <= 0 or page_size <= 0):
             raise AssertionError
