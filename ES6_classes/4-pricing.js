@@ -7,7 +7,7 @@ export default class Pricing {
   }
 
   displayFullPrice() {
-    return `${this._amount} ${Currency.name} (${Currency.code})`;
+    return `${this._amount} ${this.Currency.name} (${this.Currency.code})`;
   }
 
   get gamount() {
