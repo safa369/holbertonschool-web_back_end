@@ -7,7 +7,7 @@ export default function handleResponseFromAPI(promise) {
     if (promise) {
       resolve(obj);
     } else {
-        reject()
+      reject();
     }
   })
     .then((response) => {
