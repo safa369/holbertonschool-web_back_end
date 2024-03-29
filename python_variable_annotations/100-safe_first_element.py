@@ -1,4 +1,4 @@
-#!usr/bin/env python3
+#!/usr/bin/env python3
 """safe first element"""
 from typing import Any, Optional, Sequence
 
