@@ -7,5 +7,5 @@ export default function updateUniqueItems(map) {
       map.set(key, 100);
     }
   });
-  return map
+  return map;
 }
